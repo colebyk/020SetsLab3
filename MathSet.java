@@ -28,8 +28,8 @@ public class MathSet {
 		for (int i = 0; i < 3; i++) {
 			line1 = in.readLine().split(" ");
 			line2 = in.readLine().split(" ");
-			final TreeSet<Integer> numSet1 = createSets(line1);
-			final TreeSet<Integer> numSet2 = createSets(line2);
+			TreeSet<Integer> numSet1 = createSets(line1);
+			TreeSet<Integer> numSet2 = createSets(line2);
 			
 			TreeSet<Integer> unionSet = (TreeSet<Integer>) numSet1.clone();
 			unionSet.addAll(numSet2);
